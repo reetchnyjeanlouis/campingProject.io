@@ -1,0 +1,79 @@
+body {
+    font-family: 'News Cycle', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #274f5e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+main {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.left-section {
+    flex: 1;
+    background-color: #d1d4c9;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.right-section {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #274f5e;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #1b3b4a;
+}

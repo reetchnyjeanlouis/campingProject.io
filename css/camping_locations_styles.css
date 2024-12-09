@@ -1,0 +1,262 @@
+/* the styles for the HEADER */
+header { 
+    word-wrap: break-word;
+    color: white;
+    padding: 20px;
+    background-image: url('../css/images/pexels-home-page-img4.jpg ');
+    background-size: cover;          /* Ensures the image covers the entire container */
+    background-position: 50% 55%; 
+    /*background-color: rgba(0, 0, 0, 0.35);  */
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+  }
+   
+  header h2 {
+      font-size: 42px;
+    font-family: 'Fredericka the Great', cursive;
+    color: tan;
+    text-align: center left;
+  }
+  
+  header img {
+      float: left;
+    height: 200px;
+  }
+  #Welcome {
+    font-weight: bold;
+    font-size: 45px;
+    font-family:"Source Serif Pro", "Noto Serif", serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  #Welcome-subtitle {
+    font-weight: bold;
+    font-size: 27px;
+    font-family:Lato, "Noto Sans", Helvetica, Corbel, sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #Welcome-p {
+    font-family:Lato, "Noto Sans", Helvetica, Corbel, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
+  /* the styles for the NAVIGATION MENU */
+  #nav_menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    /* border-right: 7px solid rgb(110, 82, 45); 
+       border-left: 7px solid rgb(110, 82, 45); 
+       border-bottom: 7px solid rgb(110, 82, 45); */
+  }
+  
+  #nav_menu > ul {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  }
+  
+  #nav_menu ul li {
+    list-style-type: none;
+    flex-grow: 1; /* This will make each item grow evenly */
+  }
+  
+  #nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 15px 9px 15px 0px;
+    text-decoration: none;
+    background-color: #274f5e;
+    width: auto;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #nav_menu li a:hover {
+    background-color: #336a7d;
+  }
+  
+  #nav_menu a.current {
+    background-color: #336a7d;
+  }
+  
+  #nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: auto;
+  }
+  
+  #nav_menu ul ul li {
+    float: none;
+  }
+  
+  #nav_menu ul li:hover > ul {
+    display: block;
+  }
+  
+  #nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    #nav_menu ul li {
+        float: none;
+        width: auto;
+    }
+  
+    #nav_menu ul li a {
+        width: auto;
+        padding: 15px;
+    }
+  
+    #nav_menu ul ul {
+        position: static;
+    }
+}
+
+/* the styles for the elements */
+@font-face {
+	font-family: seguihis;
+	src: url(seguihis.ttf);
+}
+
+body {
+  background-color: #274f5e; /* Dark teal background */
+  padding: 0px;
+  margin: 0px;
+  font-family: seguihis;
+  font-size: 20px;
+  color: white; /* Light text for contrast */
+}
+
+/* the styles for the CAMPING_LOCATIONS page */
+
+.MostPopCamp {
+    font-size: 35px;
+    font-family:HARNGTON;
+    margin-top: 15px;
+    text-decoration: underline double;
+      text-underline-offset: 5px;  
+  }
+  
+  #square1{
+    width: 50%;
+    margin-right: auto; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #square2{
+    width: 50%;
+    margin-right: auto; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #home-page-list {
+    padding-left: 20px; 
+    
+  }
+  ul.camping {
+    padding-left: 0px; 
+    list-style-type: none;
+  }
+  
+  ul.camping h4 {
+    font-size: 30px;
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    background-color: rgba(255, 244, 244, 0.6); 
+    padding: 7px 1px 7px 1px;
+    width: 100%;
+  }
+  
+  .camping-spot-container {
+    border: 7px inset darkolivegreen;
+    margin: 10px;
+    height: fit-content;
+  }
+  .camp-parent-container {
+    display: flex;
+  }
+  .camp1-camp5-container, .camp6-camp9-container {
+   width: 50%;
+  }
+  
+  .CampSpotBox {
+    border: none;
+    background-color: rgba(255, 244, 244, 0.7);
+    padding: 2px 0px 15px 15px;
+    display: inline-block;
+    width: 100%; /* Adjust the width to account for the padding */
+    font-weight: bold;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  .imageWithCaption {
+    position: relative;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .imageWithCaption img {
+    width: 100%;
+    height: min-content;/* Maintain aspect ratio */
+    display: block;
+  }
+  .imageWithCaption figcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .imageWithCaption figcaption a {
+    text-decoration: none;
+  }
+  .imageWithCaption figcaption a:visited {
+    color: white;
+  }
+  .ReadMore-Reserve {
+    text-decoration: none;
+    border: rgb(110, 82, 45) 3px solid ;
+    background-color: darkolivegreen ;
+    color: wheat;
+    padding: 5px;
+    margin:  5px 5px 5px 0px;
+  }
+  
+  .centered-link {
+        text-align: center;
+      }
+  .centered-link a {
+    text-decoration: none;
+    font-family: HARNGTON;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .centered-link {
+    margin-top: 50px;
+  }
+  
+  
+  

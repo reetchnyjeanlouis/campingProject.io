@@ -1,0 +1,644 @@
+/* the styles for the HEADER */
+header { 
+  word-wrap: break-word;
+  color: white;
+  padding: 20px;
+  background-image: url('../css/images/pexels-home-page-img4.jpg ');
+  background-size: cover;          /* Ensures the image covers the entire container */
+  background-position: 50% 55%; 
+  /*background-color: rgba(0, 0, 0, 0.35);  */
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+ 
+header h2 {
+	font-size: 42px;
+  font-family: 'Fredericka the Great', cursive;
+  color: tan;
+  text-align: center left;
+}
+
+header img {
+	float: left;
+  height: 200px;
+}
+#Welcome {
+  font-weight: bold;
+  font-size: 45px;
+  font-family:"Source Serif Pro", "Noto Serif", serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#Welcome-subtitle {
+  font-weight: bold;
+  font-size: 27px;
+  font-family:Lato, "Noto Sans", Helvetica, Corbel, sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#Welcome-p {
+  font-family:Lato, "Noto Sans", Helvetica, Corbel, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/* the styles for the NAVIGATION MENU */
+#nav_menu ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#nav_menu > ul {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+}
+
+#nav_menu ul li {
+  list-style-type: none;
+  flex-grow: 1; /* This will make each item grow evenly */
+}
+
+#nav_menu ul li a {
+  display: block;
+  text-align: center;
+  padding: 15px 9px 15px 0px;
+  text-decoration: none;
+  background-color: #274f5e;
+  width: auto;
+  color: white;
+  font-weight: bold;
+}
+
+#nav_menu li a:hover {
+  background-color: #336a7d;
+}
+
+#nav_menu a.current {
+  background-color: #336a7d;
+}
+
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: auto;
+}
+
+#nav_menu ul ul li {
+  float: none;
+}
+
+#nav_menu ul li:hover > ul {
+  display: block;
+}
+
+#nav_menu > ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #nav_menu ul li {
+      float: none;
+      width: auto;
+  }
+
+  #nav_menu ul li a {
+      width: auto;
+      padding: 15px;
+  }
+
+  #nav_menu ul ul {
+      position: static;
+  }
+}
+
+
+/* the styles for the elements */
+@font-face {
+	font-family: seguihis;
+	src: url(seguihis.ttf);
+}
+
+body {
+  background-color: #274f5e; /* Dark teal background */
+  padding: 0px;
+  margin: 0px;
+  font-family: seguihis;
+  font-size: 20px;
+  color: white; /* Light text for contrast */
+}
+
+/* the style for the ASIDE SECTION */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* the styles for the Home Page Image */
+#Home-Page-Img1 {
+  width: 100%; /* Set width to 100% of its container */
+  max-width: calc(100% - 40px); /* Accounts for 20px padding on each side of the container */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes any extra spacing from inline images */
+  margin: 0 auto; /* Centers the image within the container */
+  order: -1;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: column; /* Keeps the image on top on larger screens as well */
+  }
+}
+
+aside {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  background-color: rgb(167, 167, 3);
+  border: 10px double rgb(110, 82, 45);
+  margin-top: 8000px;
+}
+.aside-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+.aside-card {
+  width: 350px;
+  margin: 0px;
+  border: 2px solid rgb(110, 82, 45);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.aside-thumbnail {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: contiain; /* This will cover the area without stretching the image */
+}
+
+  
+.aside-info {
+  padding: 15px;
+  background-color: rgb(218, 213, 147);
+}
+.aside-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.aside-description {
+  font-size: 14px;
+  color: #666;
+}
+/* the styles for the ARTICLES */
+
+
+/* the styles for the HOME PAGE MAIN */
+.intro-paragraph {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+table {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-collapse: collapse; /* Ensures inner borders look seamless */
+}
+
+#home-two-column-table-bg {
+  background-image: url('../css/images/pexels-home-page-img5.jpg');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center top;
+}
+
+.home-two-column-table {
+  width: 100%;
+}
+
+.home-two-column-table th, 
+.home-two-column-table td {
+  border: 1px solid #ddd; /* Inner borders */
+  padding: 20px;
+  font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  height: 150px;
+  color: white;
+}
+
+.home-two-column-table th {
+  font-weight: bold;
+  font-size: 30px;
+  border-top: none; /* Removes top border of table header */
+}
+
+.home-two-column-table td:first-child, 
+.home-two-column-table td:last-child {
+  border-left: none; /* Removes left border from first column */
+  border-right: none; /* Removes right border from last column */
+}
+
+.home-two-column-table th:first-child, 
+.home-two-column-table th:last-child {
+  border-left: none; /* Removes left border from first header cell */
+  border-right: none; /* Removes right border from last header cell */
+}
+
+.home-two-column-table td:not(:last-child), 
+.home-two-column-table th:not(:last-child) {
+  border-right: 1px solid #ddd; /* Keeps middle vertical border intact */
+}
+
+.home-two-column-tr-5 td {
+  border-bottom: none; /* Removes the bottom border of the last row */
+}
+
+.home-two-column-table-title {
+  text-decoration: underline;
+  margin-bottom: 20px; /* Increase this value to add more space */
+  display: inline-block;
+}
+
+.home-two-column-table a {
+ 
+  color: white;
+
+}
+
+.home-two-column-table a:visited {
+    color: white; 
+}
+
+
+
+#student-aid-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both sections align evenly */
+  gap: 20px; /* Adds space between left and right sections */
+  padding: 20px; /* Overall padding for the container */
+  background-color: #274f5e;
+  color: white;
+  font-family: 'News Cycle', sans-serif;
+  height: 600px;
+}
+
+
+#left-content {
+  flex: 1;
+  margin: 10px 0;
+  background-image: url('../css/images/pexels-home-page-img7.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  color: white;
+  position: relative; /* Allows the overlay to be positioned on top */
+}
+
+#left-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35); /* Semi-transparent black overlay */
+  z-index: 1; /* Places the overlay behind the text */
+}
+
+#left-content h1 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold; /* Optional, to emphasize */
+  color: white; /* Ensure readability */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Improves visibility over the image */
+  margin-bottom: 20px; /* Optional spacing below the heading */
+}
+
+
+#left-content h1,
+.button-group {
+  position: relative; /* Ensures the text stays above the overlay */
+  z-index: 2;
+}
+
+.button-group {
+  display: inline-flex; /* Aligns the button and link side by side */
+  align-items: center; /* Vertically aligns the "Log In" text with the button */
+}
+
+.create-account-btn {
+  background-color: white; /* Button background color */
+  color: 004c97;
+  font-family: Arial, sans-serif;
+  color: #274f5e;
+  font-size: 20px;
+  line-height: 1.5rem;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 8px; /* Smooth edges for the button */
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.create-account-btn:hover {
+  background-color:#e8e8e8; /* Darker shade on hover */
+}
+
+.log-in-link {
+  color: white; /* Matches button color */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: none; /* Removes underline */
+  margin-left: 15px; /* Adds spacing between the button and the link */
+  cursor: pointer;
+}
+
+.log-in-link:hover {
+  text-decoration: underline; /* Adds underline on hover for emphasis */
+}
+
+.call-to-action {
+  position: absolute;
+  bottom: 20px; /* Adjusts how far from the bottom it sits */
+  left: 20px; /* Adjusts horizontal position */
+  color: white; /* Ensure text is readable */
+  font-size: 1.52rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds visibility with a shadow */
+  max-width: 80%; /* Limits width to avoid text overflow */
+  line-height: 1.4; /* Improves readability */
+  z-index: 1; /* Places the overlay behind the text */
+}
+
+#right-content {
+  flex: 1; /* Ensures the right section also fills its side */
+  margin: 10px 0; /* Adds minimal space above and below */
+  padding: 40px 20px 20px 20px; /* Adds internal spacing */
+  max-width: 40%; /* Limits how wide the right section can get */
+}
+
+#right-content h3 {
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  font-family: News Cycle !important;
+  color: white;
+  text-decoration: none;
+}
+
+#right-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#right-content ul li {
+  margin-bottom: 10px;
+}
+
+#right-content ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#right-content ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* the styles for the  MAIN */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: rgb(167, 167, 3);
+  border: 10px double rgb(110, 82, 45);
+ margin: 20px 0px 0 0;
+}
+@font-face {
+	font-family: HARNGTON;
+	src: url(HARNGTON.TTF);
+}
+@font-face {
+	font-family: PAPYRUS;
+	src: url(PAPYRUS.TTF);
+}
+ h3 {
+  font-size: 40px;
+  color: rgb(86, 64, 36);
+  font-family:HARNGTON;
+  margin-top: 0px;
+  text-decoration: underline;
+    text-underline-offset: 2px;  
+    text-decoration-color: darkolivegreen;
+
+}
+
+h4 {
+  font-size: 25px;
+  font-family: PAPYRUS;
+    text-underline-offset: 2px;  
+}
+
+
+
+
+/* styles for the map page */
+.map-main h1 {
+  color: rgb(86, 64, 36);
+  font-size: 30px;
+  margin-top: 20px;
+  text-decoration: underline;
+    text-underline-offset: 2px;  
+    text-decoration-color: darkolivegreen;
+}
+/* the styles for the SAFETY_TIPS page */
+
+/* the styles for the EVENTS_ACTIVITIES page */
+.event-header {
+  background-color: rgb(167, 167, 3);
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: auto;
+  border: 10px double rgb(110, 82, 45);
+  
+}
+.event-header h1 {
+  font-size: 40px;
+  color: rgb(86, 64, 36);
+  font-family:HARNGTON;
+  margin-top: 30px;
+  text-decoration: underline;
+    text-underline-offset: 2px;  
+    text-decoration-color: darkolivegreen;
+}
+.event-container-grp-parent {
+  display: flex;
+}
+.event-container-grp-1, .event-container-grp-2 {
+  width: 50%;
+}
+.e
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.event-card {
+  width: 400px;
+  margin: 10px;
+  background-color: rgb(218, 213, 147);
+  border: 2px solid rgb(110, 82, 45);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.event-thumbnail {
+  width: 100%;
+  height: 170px;
+  background-color: darkolivegreen;
+}
+.event-info {
+  padding: 15px;
+}
+.event-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.event-description {
+  font-size: 14px;
+  color: #666;
+}
+/* the styles for the ABOUT_US page */
+.about-paragraph {
+  word-wrap: break-word;
+}
+.about-paragraph h1 {
+  color: rgb(86, 64, 36);
+  font-size: 30px;
+  margin-top: 20px;
+  text-decoration: underline;
+    text-underline-offset: 2px; 
+    text-decoration-color: darkolivegreen;
+}
+.about-paragraph h2 {
+  color: rgb(86, 64, 36);
+  font-size: 30px;
+  margin-top: 20px;
+  text-decoration: underline;
+    text-underline-offset: 2px;  
+    text-decoration-color: darkolivegreen;
+}
+/* styles for the CONTACTS page */
+.contact-container p{
+  font-size: 20px;
+}
+.contact-container {
+  max-width: 600px;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5dc; /* tan background */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  float: left; /* Aligns the container to the left */
+}
+.contact-container h1 {
+  background-color: #556b2f; /* darkolivegreen header */
+  color: #fff; /* white text */
+  padding: 20px;
+  margin: -20px -20px 20px -20px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #564028; /* rgb(86, 64, 36) for the text */
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #a7a703; /* rgb(167, 167, 3) border */
+  border-radius: 5px;
+  background-color: #808000; /* olive background */
+  color: #f5f5dc; /* tan text */
+}
+
+.contact-container input[type="submit"] {
+  background-color: #556b2f; /* darkolivegreen button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-container input[type="submit"]:hover {
+  background-color: #455a29; /* darker olive green on hover */
+}
+/* Clear float */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Placeholder styling */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #f5f5dc; /* tan placeholder */
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #f5f5dc; /* tan placeholder */
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #f5f5dc; /* tan placeholder */
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #f5f5dc; /* tan placeholder */
+}
+
+/* Footer */
+footer {
+  background-color: #336a7d; /* Lighter teal */
+  border: 10px double #274f5e;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: white; 
+}
+
+footer a:visited {
+  color: white; 
+}
