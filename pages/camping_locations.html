@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta .name="description" content="Camping .Website.">
+    <meta .name="keywords" . content="camping, hiking, kayaking">
+    <meta .name="author" content="Reetchny. Jean-Louis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Camping Website</title>
+    <link rel="icon" type="image/png" href="css/images/logo.jpeg">
+    <link rel="stylesheet" href="../css/camping_locations_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Noto+Serif&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="../css/images/logo-removebg (2).png" alt="Website logo"></a>
+            <p id="Welcome">Welcome to GeorgiaOutdoors</p>
+            <p id="Welcome-subtitle">The ultimate guide to camping in Georgia! <br>
+                <span id="Welcome-p">Whether you’re a seasoned camper or a first-timer, our website is your go-to
+                    resource for planning
+                    and enjoying your outdoor adventures!</span>
+            </p>
+
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../pages/camping_locations.html" class="current" >Camping Locations</a></li>
+            <li><a href="../pages/Safety_Tips.html">Safety Tips</a></li>
+            <li><a href="../pages/events_activities.html" >Events & Activities</a></li>
+            <li><a href="../pages/community.html" > Community</a>
+                <ul>
+                    <li><a href="#" >Blogs</a></li>
+                </ul>
+            </li>
+            <li><a href="#" >   Store</a>
+            <li><a href="../pages/aboutus.html" > About Us</a>
+                <ul>
+                    <li><a href="../pages/contacts.html" >Contacts</a></li>
+                </ul>
+            </li>
+            <li><a href="../php/create_account.php" class="nav-btn" >Create Account</a></li>
+            <li><a href="../php/login.php " class="nav-btn" >Log In</a></li>
+
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <div class="container">
+        <aside>
+            <h3></h3>
+            <ul>
+                <li><a href="#"><br></a></li>
+                <li><a href="#"><br></a></li>
+                <li><a href="#"><br></a></li>
+                <li><a href="#"> <br> </a></li>
+            </ul>
+        </aside>
+    <main class="map-main">
+        <h1>Georgia State Parks & Historic Sites Map</h1>
+        <iframe src="https://www.google.com/maps/d/viewer?mid=1_j5Bp9DpsXY858Z2BqBmPEfmFzg&hl=en&ll=32.772345085749315%2C-83.0302208592567&z=10" width="1000" height="600"></iframe>
+
+        <h3>Discover the best camping spots and activities in Georgia.</h3>
+            <h4 class="MostPopCamp"><strong>Most popular camping spots last month</strong></h4>
+            <ul class="camping">
+                <div class="camp-parent-container">
+                    <div class="camp1-camp5-container">
+                        <div class="camping-spot-container" id="camping-spot-1">
+                            <li>
+                                <h4>SCENIC MOUNTAIN RV PARK RESORT</h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/scenic-mountain-rv-camp.jpg"
+                                        alt="Peaceful lakeside scene at Scenic Mountain RV Park Resort, highlighted by the calm waters reflecting the surrounding verdant trees, under a clear blue sky.">
+                                    <figcaption>Photo by <a
+                                            href="https://www.tripadvisor.com/Hotel_Review-g35115-d1638832-Reviews-Scenic_Mountain_RV_Park_and_Campground-Milledgeville_Georgia.html#/media/1638832/133993922:p/?albumid=101&type=0&category=101"
+                                            target="_blank">TripAdvisor</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        Located near Milledgeville and Lake Sinclair, this pet-friendly RV park offers
+                                        spacious sites for big rigs, license-free fishing ponds, and extensive walking
+                                        trails.
+                                        Guests can unwind in the saltwater pool or connect at the clubhouse.
+                                        Open year-round, it’s an ideal retreat for a peaceful or adventurous escape.
+                                        With its blend of natural beauty and modern amenities, Scenic Mountain RV Park
+                                        Resort is the perfect place to create lasting memories.
+                                    </p>
+                                    <a href="https://scenicmountainrvresort.com/about/" class="ReadMore-Reserve"
+                                        target="_blank">Read
+                                        more</a>&nbsp; <a class="ReadMore-Reserve" target="_blank"
+                                        href="https://www.tripadvisor.com/Hotel_Review-g35115-d1638832-Reviews-Scenic_Mountain_RV_Park_and_Campground-Milledgeville_Georgia.html">Make
+                                        a Reservation</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="camping-spot-container" id="camping-spot-2">
+                            <li>
+                                <h4> LAKE OCONEE</h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/Lake-Oconee.jpeg"
+                                        alt="Serene sunset scene with the sun low on the horizon, casting a warm glow, silhouettes of tall trees, a calm body of water reflecting sunset colors, and a wooden dock extending into the water with a small boat or watercraft.">
+                                    <figcaption>Photo by <a href="https://koa.com/campgrounds/lake-oconee/photos/"
+                                            target="_blank">KOA Holiday</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        Nestled on the southern banks of Lake Oconee, the KOA campground is a haven for
+                                        those seeking both adventure and tranquility.
+                                        With boat access, unique railroad boxcar accommodations, and a serene private
+                                        beach,
+                                        it offers a picturesque lakeside escape.
+                                        The clubhouse complements the natural beauty, providing a cozy retreat.
+                                        Guests can indulge in the best bass fishing, explore forested trails, or simply
+                                        relax by the water, making every moment at this campground a treasured one.
+                                    </p>
+                                    <a href="https://koa.com/campgrounds/lake-oconee/" class="ReadMore-Reserve"
+                                        target="_blank">Read
+                                        more</a>&nbsp; <a class="ReadMore-Reserve" target="_blank"
+                                        href="https://koa.com/campgrounds/lake-oconee/reserve/">Make a Reservation</a>
+                                </div>
+                            </li>
+                        </div>
+
+                        <div class="camping-spot-container" id="camping-spot-3">
+                            <li>
+                                <h4> MISTLETOE STATE PARK </h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/Mistletoe-State-Park.jpg"
+                                        alt="Serene woodland creek at Mistletoe State Park, featuring clear waters reflecting dense greenery, large moss-covered rocks, and dappled sunlight creating a tranquil atmosphere.">
+                                    <figcaption>Photo by <a
+                                            href="https://gastateparks.org/Mistletoe?asset=2589-ig-1758328085152774021_48731166"
+                                            target="_blank">@atadcreativeproduction</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        Mistletoe State Park, on Clarks Hill Lake near Augusta, offers campsites,
+                                        cottages,
+                                        and a variety of outdoor activities.
+                                        Enjoy swimming, boating, canoeing, and trails leading to an ancient rock wall.
+                                        It’s an ideal spot for fishing, wildlife viewing, and connecting with nature.
+                                        Whether you’re exploring the trails or relaxing by the lakeshore, Mistletoe
+                                        State
+                                        Park promises an unforgettable experience in Georgia’s great outdoors.
+                                    </p>
+                                    <a href="https://gastateparks.org/Mistletoe" class="ReadMore-Reserve">Read
+                                        more</a>&nbsp; <a class="ReadMore-Reserve"
+                                        href="https://gastateparks.reserveamerica.com/campsiteFilterAction.do?sitefilter=ALL&startIdx=0&contractCode=GA&parkId=530180&_gl=1*6iyfnj*_ga*NzYwMzQ3NDEzLjE3MTI0NzE4NzY.*_ga_NY38CG84RB*MTcxMjQ3MTg3NS4xLjAuMTcxMjQ3MTg3NS4wLjAuMA..">Make
+                                        a Reservation</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="camping-spot-container" id="camping-spot-4">
+                            <li>
+                                <h4> FORT MOUNTAIN STATE PARK </h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/Fort-Mountain-State-Park.jpg"
+                                        alt="Tranquil sunset at Fort Mountain State Park, with a wooden trail meandering through lush greenery under a sky ablaze with warm twilight hues.">
+                                    <figcaption>Photo by <a
+                                            href="https://gastateparks.org/FortMountain?asset=2589-ig-18001625995334873"
+                                            target="_blank">@billrubino</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        Fort Mountain State Park, spanning 3,712 acres near Chatsworth and Ellijay,
+                                        boasts
+                                        an ancient 885-foot rock wall. This mysterious structure, believed to be of
+                                        Native
+                                        American origin, adds intrigue to the park.
+                                        With over 60 miles of scenic trails winding through forests and blueberry
+                                        thickets,
+                                        it’s a haven for hikers and nature lovers.
+                                        Don’t miss the stone fire tower and lakeside beach for memorable moments in
+                                        Georgia’s serene wilderness.
+                                        The park also offers rustic cabins for those seeking an overnight escape.
+                                        Imagine
+                                        waking up surrounded by nature, with the ancient rock wall as your backdrop.
+                                        Whether you’re hiking the trails or simply unwinding by the lakeshore, Fort
+                                        Mountain
+                                        invites you to create lasting memories in Georgia’s wilderness.
+                                    </p>
+                                    <a href="https://gastateparks.org/FortMountain" class="ReadMore-Reserve"
+                                        target="_blank">Read
+                                        more</a>&nbsp; <a class="ReadMore-Reserve" target="_blank"
+                                        href="https://gastateparks.reserveamerica.com/camping/fort-mountain-state-park/r/campgroundDetails.do?contractCode=GA&parkId=530158">Make
+                                        a Reservation</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="camping-spot-container" id="camping-spot-5">
+                            <li>
+                                <h4> HIGH FALLS STATE PARK </h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/High-Falls-State-Park.jpg"
+                                        alt="Sunrise over High Falls State Park with mist rising from the waterfall and river, surrounded by forested banks">
+                                    <figcaption>Photo by <a
+                                            href="https://gastateparks.org/HighFalls?asset=2589-ig-17882345273109140"
+                                            target="_blank">@thomasw24</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        High Falls State Park, cradled in the embrace of the Towaliga River, spans a
+                                        majestic 1,050 acres in Jackson, Georgia.
+                                        Its crowning glory is High Falls, a cascading waterfall that creates a serene
+                                        and picturesque environment.
+                                        Visitors can meander along trails that offer tranquil views or engage with the
+                                        river’s flow on kayaks and canoes.
+                                        The park’s verdant landscape is home to an array of wildlife, while its historic
+                                        past as a thriving industrial town adds a layer of intrigue for history buffs.
+                                        Whether it’s picnicking by the water’s edge or hiking to vantage points that
+                                        afford panoramic views of the falls and river, High Falls State Park invites you
+                                        to partake in its blend of natural beauty and historical charm.
+                                    </p>
+                                    <a href="https://gastateparks.org/HighFalls" class="ReadMore-Reserve"
+                                        target="_blank">Read
+                                        more</a>&nbsp; <a class="ReadMore-Reserve" target="_blank"
+                                        href="https://gastateparks.reserveamerica.com/campsiteFilterAction.do?sitefilter=ALL&startIdx=0&contractCode=GA&parkId=530168&_gl=1*1xhuw9n*_ga*NzYwMzQ3NDEzLjE3MTI0NzE4NzY.*_ga_NY38CG84RB*MTcxNDMyMTkxNS4xMC4xLjE3MTQzMjI0MjEuMC4wLjA.">Make
+                                        a Reservation</a>
+
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="camp6-camp9-container">
+                        <div class="camping-spot-container" id="camping-spot-6">
+                            <li>
+                                <h4> VOGEL STATE PARK </h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/Vogel-State=Park.jpg"
+                                        alt="A serene view of Vogel State Park featuring a calm lake reflecting the vibrant autumn foliage, with a docked boathouse and surrounding forest against a backdrop of clear blue skies.">
+                                    <figcaption>Photo by <a
+                                            href="https://gastateparks.org/Vogel?asset=2589-ig-17921057029467722/"
+                                            target="_blank">@dineshchitlangia</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        Vogel State Park, cradled at the foot of Blood Mountain in Blairsville, Georgia,
+                                        covers 233 acres of pristine Appalachian beauty.
+                                        The park’s centerpiece, Lake Trahlyta, offers a tranquil spot for paddleboats
+                                        and
+                                        fishing, with the reflection of the surrounding mountains shimmering on its
+                                        surface.
+                                        The park’s cottages and campsites provide a cozy haven for visitors to stay and
+                                        soak
+                                        in the panoramic views.
+                                        Whether trekking along the diverse trails or enjoying a peaceful picnic by the
+                                        water, Vogel State Park beckons you to indulge in the tranquility of Georgia’s
+                                        enchanting mountain landscape.
+                                    </p>
+                                    <a href="https://gastateparks.org/Vogel" class="ReadMore-Reserve"
+                                        target="_blank">Read more</a>&nbsp; <a class="ReadMore-Reserve" target="_blank"
+                                        href="https://gastateparks.reserveamerica.com/campsiteFilterAction.do?sitefilter=ALL&startIdx=0&contractCode=GA&parkId=530201&_gl=1*14pl4cf*_ga*NzYwMzQ3NDEzLjE3MTI0NzE4NzY.*_ga_NY38CG84RB*MTcxNDIyOTk3MC43LjEuMTcxNDIzMDQ0NS4wLjAuMA..">Make
+                                        a Reservation</a>
+                                </div>
+                            </li>
+                        </div>
+
+
+                        <div class="camping-spot-container" id="camping-spot-7">
+                            <li>
+                                <h4> TALLULAH GORGE STATE PARK </h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/Tallulah-Gorge-State-Park.png"
+                                        alt="A scenic view of Tallulah Gorge State Park, showcasing the steep walls of the gorge with a river flowing at the bottom, surrounded by lush greenery and enveloped in mist.">
+                                    <figcaption>Photo by <a
+                                            href="https://www.reddit.com/media?url=https%3A%2F%2Fexternal-preview.redd.it%2F8qTa68nFkgWY5Sm9x4LZ4dgoD32hk03FSUKHbcv90Ow.jpg%3Fauto%3Dwebp%26s%3Ddf625acb465ed9166d8302ce9404acc5742e2e6d"
+                                            target="_blank">@Reddit</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        Tallulah Gorge State Park, located at the base of Blood Mountain in the
+                                        Chattahoochee National Forest, spans 2,689 acres and is one of Georgia’s most
+                                        captivating natural wonders.
+                                        The park surrounds Tallulah Gorge, a 1,000-foot-deep chasm carved by the
+                                        Tallulah
+                                        River.
+                                        Visitors can hike rim trails to several overlooks, or they can obtain a permit
+                                        to
+                                        hike to the gorge floor (limited to 100 per day, not available during water
+                                        releases).
+                                        The park’s rugged terrain, lush forests, and cascading waterfalls provide
+                                        habitat
+                                        for unique species.
+                                        Whether you’re an adventure seeker or a nature enthusiast, Tallulah Gorge State
+                                        Park
+                                        invites you to immerse yourself in awe-inspiring beauty and daring adventures
+                                        while
+                                        connecting with the past in this geologic wonderland.
+                                    </p>
+                                    <a href="https://gastateparks.org/TallulahGorge" class="ReadMore-Reserve"
+                                        target="_blank">Read
+                                        more</a>&nbsp; <a class="ReadMore-Reserve" target="_blank"
+                                        href="https://gastateparks.reserveamerica.com/campsiteFilterAction.do?sitefilter=ALL&startIdx=0&contractCode=GA&parkId=530196&_gl=1*vt6nt5*_ga*NzYwMzQ3NDEzLjE3MTI0NzE4NzY.*_ga_NY38CG84RB*MTcxNDIyOTk3MC43LjEuMTcxNDIzMDk0OS4wLjAuMA..">Make
+                                        a Reservation</a>
+
+                                </div>
+                            </li>
+                        </div>
+                        <div class="camping-spot-container" id="camping-spot-8">
+                            <li>
+                                <h4> CLOUDLAND CANYON STATE PARK </h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/Cloudland-Canyon-State-Park.jpg"
+                                        alt="A serene waterfall cascading over a flat rock ledge into a calm pool below, surrounded by dense green foliage and enveloped in mist.">
+                                    <figcaption>Photo by <a href="https://www.instagram.com/p/Cu0LoA_uXX7/"
+                                            target="_blank">@billrubino</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        Cloudland Canyon State Park, nestled within the rugged beauty of Lookout
+                                        Mountain,
+                                        spans 3,485 acres in Rising Fawn, Georgia.
+                                        Its most captivating feature is Cloudland Canyon, a dramatic gorge carved by
+                                        Sitton
+                                        Gulch Creek.
+                                        Visitors can explore rim trails with breathtaking vistas or venture down to the
+                                        canyon floor for an up-close encounter with waterfalls.
+                                        The park’s dense forests harbor diverse wildlife, and the rugged terrain invites
+                                        hikers and adventure seekers.
+                                        Whether you’re camping under the stars or marveling at the canyon’s grandeur,
+                                        Cloudland Canyon State Park beckons you to immerse yourself in Georgia’s natural
+                                        wonder.
+                                    </p>
+                                    <a href="https://gastateparks.org/CloudlandCanyon" class="ReadMore-Reserve"
+                                        target="_blank">Read
+                                        more</a>&nbsp; <a class="ReadMore-Reserve" target="_blank"
+                                        href="https://gastateparks.reserveamerica.com/campsiteFilterAction.do?sitefilter=ALL&startIdx=0&contractCode=GA&parkId=530148&_gl=1*1gxemmx*_ga*NzYwMzQ3NDEzLjE3MTI0NzE4NzY.*_ga_NY38CG84RB*MTcxNDIyOTk3MC43LjEuMTcxNDIzMzU4MC4wLjAuMA..">Make
+                                        a Reservation</a>
+
+                                </div>
+                            </li>
+                        </div>
+                        <div class="camping-spot-container" id="camping-spot-9">
+                            <li>
+                                <h4> AMICOLOLA FALLS STATE PARK STATE</h4>
+                                <figure class="imageWithCaption">
+                                    <img src="../css/images/Amicolola-Falls-State-Park.jpg"
+                                        alt="View of Amicalola Falls State Park featuring a cascading waterfall in the foreground with lush greenery, against a backdrop of rolling mountains under a sunset sky.">
+                                    <figcaption>Photo by <a href="https://www.instagram.com/p/C51uixXuvip/"
+                                            target="_blank">@billrubino</a></figcaption>
+                                </figure>
+                                <div class="CampSpotBox">
+                                    <p>
+                                        Amicalola Falls State Park & Lodge, nestled amidst the natural beauty of North
+                                        Georgia, spans 829 acres of pristine wilderness.
+                                        Its most treasured gem is Amicalola Falls, a majestic 729-foot waterfall—the
+                                        highest
+                                        in the state.
+                                        The lodge itself offers awe-inspiring vistas, thrilling zip-lining adventures,
+                                        expertly guided hikes, and snug accommodations.
+                                        Whether you’re exploring the network of scenic trails or simply unwinding by the
+                                        tranquil lakeshore, Amicalola Falls State Park & Lodge invites you to forge
+                                        enduring
+                                        memories in Georgia’s serene wilderness.
+                                    </p>
+                                    <a href="https://www.amicalolafallslodge.com/" class="ReadMore-Reserve"
+                                        target="_blank">Read
+                                        more</a>&nbsp; <a class="ReadMore-Reserve" target="_blank"
+                                        href="https://www.amicalolafallslodge.com/">Make a Reservation</a>
+                                    <p class="figcaption-container">
+                                    </p>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            <div class="centered-link">
+                <a class="homePage-pages" href="index.html">Page 1</a> | <a class="homePage-pages"> Page 2</a> | <a
+                    class="homePage-pages"> Page 3...</a>
+            </div>
+    </main>
+    </div>
+    <footer>
+        <p>&copy; 2024, Georgia Outdoors by Reetchny Jean-Louis | All Rights Reserved</p>
+        <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+        <p>Contact us: <a href="emailto:info@georgiaoutdoors.com">info@georgiaoutdoors.com</a></p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+      </footer>
+</body>
+</html>
